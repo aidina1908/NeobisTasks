@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/icecream"
+        android:src="@drawable/caramelcookie"
+        android:layout_width="420dp"
+        android:layout_height="420dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:text="Kaynar IceCream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-light"
+        android:textSize="30sp"
+        android:layout_above="@id/info"
+        android:background="#B3f5f5f5"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More than 10 flavors, ice cream cake, cocktails."
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/icecream" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:src="@drawable/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/info"        />
+
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/call"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="20dp"
+        android:text="0550 23 45 78"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:src="@drawable/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/call"        />
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/call"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="20dp"
+        android:text="New TSUM, 5th floor"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/clock"
+        android:layout_below="@id/location"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="159dp"
+        android:layout_below="@id/adress"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/time"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="16dp"
+        android:text="10am - 10pm"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+
+
+</RelativeLayout>
